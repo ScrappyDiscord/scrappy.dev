@@ -1,0 +1,227 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Scrappy Language - v0.0.3</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">Scrappy Language - v0.0.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="modules.html">Globals</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container">
+	<div class="row container container-main">
+		<div class="col-3 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul>
+					<li>📑 Index</li>
+					<li><br></li>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/errors.html">errors</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/language.html">language</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/util_constants.html">util/constants</a>
+						</li>                        <li class=" tsd-kind-module">
+						<a href="modules/util_util.html">util/util</a>
+				</li>                </ul>
+			</nav>
+		</div>
+		<div class="col-9 col-content">
+			<div class="tsd-panel">
+				<a href="#scrappy-language" id="scrappy-language" style="color: inherit; text-decoration: none;">
+					<h1>Scrappy Language</h1>
+				</a>
+				<a href="#about" id="about" style="color: inherit; text-decoration: none;">
+					<h2>About</h2>
+				</a>
+				<p>An easy language module for handling multilingual systems originally written as a module for <a href="https://scrappydiscord.com">Scrappy</a>.</p>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<a href="#npm" id="npm" style="color: inherit; text-decoration: none;">
+					<h3>NPM</h3>
+				</a>
+				<pre><code><span style="color: #9CDCFE">npm</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">install</span><span style="color: #D4D4D4"> @</span><span style="color: #9CDCFE">scrappydiscord</span><span style="color: #D4D4D4">/</span><span style="color: #9CDCFE">language</span>
+</code></pre>
+				<a href="#yarn" id="yarn" style="color: inherit; text-decoration: none;">
+					<h3>Yarn</h3>
+				</a>
+				<pre><code><span style="color: #9CDCFE">yarn</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">add</span><span style="color: #D4D4D4"> @</span><span style="color: #9CDCFE">scrappydiscord</span><span style="color: #D4D4D4">/</span><span style="color: #9CDCFE">language</span>
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p><em><strong>The following examples is in TypeScript.</strong></em></p>
+				<a href="#initialize-it" id="initialize-it" style="color: inherit; text-decoration: none;">
+					<h3>Initialize It</h3>
+				</a>
+				<pre><code class="language-javascript"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Language</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;@scrappydiscord/language&#039;</span><span style="color: #D4D4D4">;</span>
+
+<span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">language</span><span style="color: #D4D4D4"> = </span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">Language</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;path/to/translations&#039;</span><span style="color: #D4D4D4">);</span>
+</code></pre>
+				<p>You can also customize the options listed <a href="">here</a> under <code>DefaultOptions</code> by passing an object as the second argument to the constructor like so: </p>
+				<pre><code class="language-javascript"><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">Language</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;path/to/translations&#039;</span><span style="color: #D4D4D4">, {</span>
+<span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">returnKeyNotNull:</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">true</span>
+<span style="color: #D4D4D4">});</span>
+</code></pre>
+				<p>The following options are currently available: </p>
+				<ul>
+					<li><code>defaultLanguage</code> (default: <code>en</code>) - The default language code to use, check <code>LanguageCodes</code> to see all available codes.</li>
+					<li><code>replacementKey</code> (default: <code>$</code>) - The character to use for placeholders.</li>
+					<li><code>returnKeyNotNull</code> (default: <code>false</code>) - Instead of returning null when a translation key is not found, it will return the key requested.</li>
+				</ul>
+				<a href="#getting-a-translation" id="getting-a-translation" style="color: inherit; text-decoration: none;">
+					<h3>Getting a Translation</h3>
+				</a>
+				<pre><code class="language-javascript"><span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">title</span><span style="color: #D4D4D4">: </span><span style="color: #4EC9B0">string</span><span style="color: #D4D4D4"> = </span><span style="color: #9CDCFE">language</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;title&#039;</span><span style="color: #D4D4D4">, </span><span style="color: #CE9178">&#039;en&#039;</span><span style="color: #D4D4D4">);</span>
+<span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">greeting</span><span style="color: #D4D4D4">: </span><span style="color: #4EC9B0">string</span><span style="color: #D4D4D4"> = </span><span style="color: #9CDCFE">language</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;greeting.generic&#039;</span><span style="color: #D4D4D4">, </span><span style="color: #CE9178">&#039;en&#039;</span><span style="color: #D4D4D4">);</span>
+</code></pre>
+				<a href="#adding-new-translations" id="adding-new-translations" style="color: inherit; text-decoration: none;">
+					<h3>Adding New Translations</h3>
+				</a>
+				<p>Sometimes there is a need to add new strings to a translation after it&#39;s initially created. This library makes it easy.</p>
+				<pre><code class="language-javascript"><span style="color: #9CDCFE">language</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">addToTranslation</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;en&#039;</span><span style="color: #D4D4D4">, {</span>
+<span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">newString:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;Hello, world!&#039;</span><span style="color: #D4D4D4">,</span>
+<span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">foo:</span><span style="color: #D4D4D4"> {</span>
+<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">bar:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;foobar&#039;</span>
+<span style="color: #D4D4D4">    }</span>
+<span style="color: #D4D4D4">});</span>
+</code></pre>
+				<a href="#replacementsplaceholders" id="replacementsplaceholders" style="color: inherit; text-decoration: none;">
+					<h3>Replacements/Placeholders</h3>
+				</a>
+				<p>Translations can even contain placeholders to be replaced at runtime with data. You can do this by default by using <code>$</code> before the name. This can be changed using the <code>replacementKey</code> option.</p>
+				<pre><code class="language-javascript"><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">language</span><span style="color: #D4D4D4"> = </span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">Language</span><span style="color: #D4D4D4">({</span>
+<span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">en:</span><span style="color: #D4D4D4"> {</span>
+<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">replaceme:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;Hello $somestring!&#039;</span>
+<span style="color: #D4D4D4">    }</span>
+<span style="color: #D4D4D4">});</span>
+
+<span style="color: #9CDCFE">language</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;replaceme&#039;</span><span style="color: #D4D4D4">, { </span><span style="color: #9CDCFE">somestring:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;World&#039;</span><span style="color: #D4D4D4"> }); </span><span style="color: #6A9955">// Will output &quot;Hello World!&quot;</span>
+</code></pre>
+				<a href="#cross-linking-translations" id="cross-linking-translations" style="color: inherit; text-decoration: none;">
+					<h3>Cross Linking Translations</h3>
+				</a>
+				<p>I know you&#39;re asking, &quot;But wait, what if I need to use other translations within a translation?&quot; There can be many reasons to do this. Standard formatting, common strings, etc. You <strong>DON&#39;T</strong> want to do this:</p>
+				<pre><code class="language-javascript"><span style="color: #9CDCFE">l</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;something&#039;</span><span style="color: #D4D4D4">, { </span><span style="color: #9CDCFE">something:</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">language</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;anotherthing&#039;</span><span style="color: #D4D4D4">, { </span><span style="color: #9CDCFE">name:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;John Doe&#039;</span><span style="color: #D4D4D4">})}); </span><span style="color: #6A9955">// This is ugly.</span>
+</code></pre>
+				<p>This package makes it easy! All you have to do is wrap the requested translation in <code>{{ }}</code> and it will pick it up. The best thing about this? You can nest references within references within references.</p>
+				<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+					<h4>Example</h4>
+				</a>
+				<p>Let&#39;s take a username with a discriminator (like a Discord username) with a custom markdown link with a URL to Google.</p>
+				<pre><code class="language-javascript"><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">language</span><span style="color: #D4D4D4"> = </span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">Language</span><span style="color: #D4D4D4">({</span>
+<span style="color: #D4D4D4">    </span><span style="color: #9CDCFE">en:</span><span style="color: #D4D4D4"> {</span>
+<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">userformat:</span><span style="color: #D4D4D4"> {</span>
+<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">discrim:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;$id&#039;</span><span style="color: #D4D4D4">,</span>
+<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">name:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;$user&#039;</span><span style="color: #D4D4D4">,</span>
+<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">formatted:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;{{userformat.name}}#{{userformat.discrim}}&#039;</span>
+<span style="color: #D4D4D4">        },</span>
+<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">links:</span><span style="color: #D4D4D4"> {</span>
+<span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">google:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;https://google.com&#039;</span>
+<span style="color: #D4D4D4">        },</span>
+<span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">advertisement:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;Welcome {{userformat.formatted}}! Please visit us on {{links.google}}.&#039;</span>
+<span style="color: #D4D4D4">    }</span>
+<span style="color: #D4D4D4">});</span>
+
+<span style="color: #9CDCFE">language</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">get</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#039;advertisement&#039;</span><span style="color: #D4D4D4">, { </span><span style="color: #9CDCFE">user:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;user&#039;</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">id:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#039;0000&#039;</span><span style="color: #D4D4D4"> });</span>
+<span style="color: #6A9955">// This will output: &quot;Welcome user#0000! Please visit us on https://google.com.&quot;</span>
+</code></pre>
+				<hr>
+				<a href="#you-can-view-the-full-docs-at-scrappydev" id="you-can-view-the-full-docs-at-scrappydev" style="color: inherit; text-decoration: none;">
+					<h3><a href="https://scrappy.dev/docs/language/0.0.3">You can view the full docs at Scrappy.Dev</a></h3>
+				</a>
+			</div>
+			<footer class="with-border-bottom">
+				<div class="tsd-legend-group">
+					<ul class="tsd-legend">
+						<li class="tsd-is-inherited"><span class="tsd-kind-icon">Inherited</span></li>
+						<li class="tsd-is-protected"><span class="tsd-kind-icon">Protected</span></li>
+						<li class="tsd-is-private"><span class="tsd-kind-icon">Private</span></li>
+						<li class="tsd-is-static"><span class="tsd-kind-icon">Static</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+						<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object</span></li>
+						<li class="tsd-kind-property"><span class="tsd-kind-icon">Property</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+						<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+						<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type</span></li>
+						<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+					</ul>
+					<ul class="tsd-legend">
+						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enum</span></li>
+						<li class="tsd-kind-constructor"><span class="tsd-kind-icon">Constructor</span></li>
+						<li class="tsd-kind-accessor"><span class="tsd-kind-icon">Getter/Setter</span></li>
+					</ul>
+				</div>
+			</footer>
+			<div>Made with ❤️ by <a href="https://github.com/pirix-gh/eledoc" target="_blank">pirix-gh</a>. Documentation generated by <a href="http://typedoc.org/" target="_blank">TypeDoc.</a></div>
+		</div>
+	</div>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
